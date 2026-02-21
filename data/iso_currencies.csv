@@ -1,0 +1,305 @@
+currency,alpha_code,numeric_code
+Afghani,AFN,971
+Euro,EUR,978
+Lek,ALL,008
+Algerian Dinar,DZD,012
+US Dollar,USD,840
+Kwanza,AOA,973
+East Caribbean Dollar,XCD,951
+Arab Accounting Dinar,XAD,396
+Argentine Peso,ARS,032
+Armenian Dram,AMD,051
+Aruban Florin,AWG,533
+Australian Dollar,AUD,036
+Azerbaijan Manat,AZN,944
+Bahamian Dollar,BSD,044
+Bahraini Dinar,BHD,048
+Taka,BDT,050
+Barbados Dollar,BBD,052
+Belarusian Ruble,BYN,933
+Belize Dollar,BZD,084
+CFA Franc BCEAO,XOF,952
+Bermudian Dollar,BMD,060
+Indian Rupee,INR,356
+Ngultrum,BTN,064
+Boliviano,BOB,068
+Mvdol,BOV,984
+Convertible Mark,BAM,977
+Pula,BWP,072
+Norwegian Krone,NOK,578
+Brazilian Real,BRL,986
+Brunei Dollar,BND,096
+Burundi Franc,BIF,108
+Cabo Verde Escudo,CVE,132
+Riel,KHR,116
+CFA Franc BEAC,XAF,950
+Canadian Dollar,CAD,124
+Cayman Islands Dollar,KYD,136
+Chilean Peso,CLP,152
+Unidad de Fomento,CLF,990
+Yuan Renminbi,CNY,156
+Colombian Peso,COP,170
+Unidad de Valor Real,COU,970
+Comorian Franc ,KMF,174
+Congolese Franc,CDF,976
+New Zealand Dollar,NZD,554
+Costa Rican Colon,CRC,188
+Cuban Peso,CUP,192
+Caribbean Guilder,XCG,532
+Czech Koruna,CZK,203
+Danish Krone,DKK,208
+Djibouti Franc,DJF,262
+Dominican Peso,DOP,214
+Egyptian Pound,EGP,818
+El Salvador Colon,SVC,222
+Nakfa,ERN,232
+Lilangeni,SZL,748
+Ethiopian Birr,ETB,230
+Falkland Islands Pound,FKP,238
+Fiji Dollar,FJD,242
+CFP Franc,XPF,953
+Dalasi,GMD,270
+Lari,GEL,981
+Ghana Cedi,GHS,936
+Gibraltar Pound,GIP,292
+Quetzal,GTQ,320
+Pound Sterling,GBP,826
+Guinean Franc,GNF,324
+Guyana Dollar,GYD,328
+Gourde,HTG,332
+Lempira,HNL,340
+Hong Kong Dollar,HKD,344
+Forint,HUF,348
+Iceland Krona,ISK,352
+Rupiah,IDR,360
+SDR (Special Drawing Right),XDR,960
+Iranian Rial,IRR,364
+Iraqi Dinar,IQD,368
+New Israeli Sheqel,ILS,376
+Jamaican Dollar,JMD,388
+Yen,JPY,392
+Jordanian Dinar,JOD,400
+Tenge,KZT,398
+Kenyan Shilling,KES,404
+North Korean Won,KPW,408
+Won,KRW,410
+Kuwaiti Dinar,KWD,414
+Som,KGS,417
+Lao Kip,LAK,418
+Lebanese Pound,LBP,422
+Loti,LSL,426
+Rand,ZAR,710
+Liberian Dollar,LRD,430
+Libyan Dinar,LYD,434
+Swiss Franc,CHF,756
+Pataca,MOP,446
+Denar,MKD,807
+Malagasy Ariary,MGA,969
+Malawi Kwacha,MWK,454
+Malaysian Ringgit,MYR,458
+Rufiyaa,MVR,462
+Ouguiya,MRU,929
+Mauritius Rupee,MUR,480
+ADB Unit of Account,XUA,965
+Mexican Peso,MXN,484
+Mexican Unidad de Inversion (UDI),MXV,979
+Moldovan Leu,MDL,498
+Tugrik,MNT,496
+Moroccan Dirham,MAD,504
+Mozambique Metical,MZN,943
+Kyat,MMK,104
+Namibia Dollar,NAD,516
+Nepalese Rupee,NPR,524
+Cordoba Oro,NIO,558
+Naira,NGN,566
+Rial Omani,OMR,512
+Pakistan Rupee,PKR,586
+Balboa,PAB,590
+Kina,PGK,598
+Guarani,PYG,600
+Philippine Peso,PHP,608
+Zloty,PLN,985
+Qatari Rial,QAR,634
+Russian Ruble,RUB,643
+Rwanda Franc,RWF,646
+Saint Helena Pound,SHP,654
+Tala,WST,882
+Dobra,STN,930
+Saudi Riyal,SAR,682
+Serbian Dinar,RSD,941
+Seychelles Rupee,SCR,690
+Leone,SLE,925
+Singapore Dollar,SGD,702
+Sucre,XSU,994
+Solomon Islands Dollar,SBD,090
+Somali Shilling,SOS,706
+South Sudanese Pound,SSP,728
+Sri Lanka Rupee,LKR,144
+Sudanese Pound,SDG,938
+Surinam Dollar,SRD,968
+Swedish Krona,SEK,752
+WIR Euro,CHE,947
+WIR Franc,CHW,948
+Syrian Pound,SYP,760
+New Taiwan Dollar,TWD,901
+Somoni,TJS,972
+Tanzanian Shilling,TZS,834
+Baht,THB,764
+Pa’anga,TOP,776
+Trinidad and Tobago Dollar,TTD,780
+Tunisian Dinar,TND,788
+Turkmenistan New Manat,TMT,934
+Uganda Shilling,UGX,800
+Hryvnia,UAH,980
+UAE Dirham,AED,784
+US Dollar (Next day),USN,997
+Peso Uruguayo,UYU,858
+Uruguay Peso en Unidades Indexadas (UI),UYI,940
+Unidad Previsional,UYW,927
+Uzbekistan Sum,UZS,860
+Vatu,VUV,548
+Bolívar Soberano,VES,928
+Bolívar Soberano,VED,926
+Dong,VND,704
+Yemeni Rial,YER,886
+Zambian Kwacha,ZMW,967
+Zimbabwe Gold,ZWG,924
+Bond Markets Unit European Composite Unit (EURCO),XBA,955
+Bond Markets Unit European Monetary Unit (E.M.U.-6),XBB,956
+Bond Markets Unit European Unit of Account 9 (E.U.A.-9),XBC,957
+Bond Markets Unit European Unit of Account 17 (E.U.A.-17),XBD,958
+Codes specifically reserved for testing purposes,XTS,963
+The codes assigned for transactions where no currency is involved,XXX,999
+Gold,XAU,959
+Palladium,XPD,964
+Platinum,XPT,962
+Silver,XAG,961
+Afghani,AFA,004
+Markka,FIM,246
+Old Lek,ALK,008
+Andorran Peseta,ADP,020
+Spanish Peseta,ESP,724
+French Franc,FRF,250
+Kwanza,AOK,024
+New Kwanza,AON,024
+Kwanza Reajustado,AOR,982
+Austral,ARA,032
+Peso Argentino,ARP,032
+Peso,ARY,032
+Russian Ruble,RUR,810
+Schilling,ATS,040
+Azerbaijan Manat,AYM,945
+Azerbaijanian Manat,AZM,031
+Belarusian Ruble,BYB,112
+Belarusian Ruble,BYR,974
+Convertible Franc,BEC,993
+Belgian Franc,BEF,056
+Financial Franc,BEL,992
+Peso boliviano,BOP,068
+Dinar,BAD,070
+Cruzeiro,BRB,076
+Cruzado,BRC,076
+Cruzeiro,BRE,076
+New Cruzado,BRN,076
+Cruzeiro Real,BRR,987
+Lev A/52,BGJ,100
+Lev A/62,BGK,100
+Lev,BGL,100
+Bulgarian Lev,BGN,975
+Kyat,BUK,104
+Croatian Dinar,HRD,191
+Croatian Kuna,HRK,191
+Peso Convertible,CUC,931
+Netherlands Antillean Guilder,ANG,532
+Cyprus Pound,CYP,196
+Krona A/53,CSJ,203
+Koruna,CSK,200
+Sucre,ECS,218
+Unidad de Valor Constante (UVC),ECV,983
+Ekwele,GQE,226
+Kroon,EEK,233
+European Currency Unit (E.C.U),XEU,954
+Georgian Coupon,GEK,268
+Mark der DDR,DDM,278
+Deutsche Mark,DEM,276
+Cedi,GHC,288
+Ghana Cedi,GHP,939
+Drachma,GRD,300
+Syli,GNE,324
+Syli,GNS,324
+Guinea Escudo,GWE,624
+Guinea-Bissau Peso,GWP,624
+Italian Lira,ITL,380
+Old Krona,ISJ,352
+Irish Pound,IEP,372
+Pound,ILP,376
+Old Shekel,ILR,376
+Pathet Lao Kip,LAJ,418
+Latvian Lats,LVL,428
+Latvian Ruble,LVR,428
+Loti,LSM,426
+Financial Rand,ZAL,991
+Lithuanian Litas,LTL,440
+Talonas,LTT,440
+Luxembourg Convertible Franc,LUC,989
+Luxembourg Franc,LUF,442
+Luxembourg Financial Franc,LUL,988
+Malagasy Franc,MGF,450
+Maldive Rupee,MVQ,462
+Mali Franc,MLF,466
+Maltese Lira,MTL,470
+Maltese Pound,MTP,470
+Ouguiya,MRO,478
+Mexican Peso,MXP,484
+Mozambique Escudo,MZE,508
+Mozambique Metical,MZM,508
+Netherlands Guilder,NLG,528
+Cordoba,NIC,558
+Sol,PEH,604
+Inti,PEI,604
+Nuevo Sol ,PEN,604
+Sol,PES,604
+Zloty,PLZ,616
+Portuguese Escudo,PTE,620
+Leu A/52,ROK,642
+Old Leu,ROL,642
+New Romanian Leu ,RON,946
+Dobra,STD,678
+Serbian Dinar,CSD,891
+Leone,SLL,694
+Slovak Koruna,SKK,703
+Tolar,SIT,705
+Rhodesian Dollar,RHD,716
+Spanish Peseta,ESA,996
+"""A"" Account (convertible Peseta Account)",ESB,995
+Sudanese Dinar,SDD,736
+Sudanese Pound,SDP,736
+Surinam Guilder,SRG,740
+WIR Franc (for electronic),CHC,948
+Tajik Ruble,TJR,762
+Timor Escudo,TPE,626
+Old Turkish Lira,TRL,792
+New Turkish Lira,TRY,949
+Turkmenistan Manat,TMM,795
+Uganda Shilling,UGS,800
+Old Shilling,UGW,800
+Karbovanet,UAK,804
+Rouble,SUR,810
+US Dollar (Same day),USS,998
+Old Uruguay Peso,UYN,858
+Uruguayan Peso,UYP,858
+Bolivar,VEB,862
+Bolívar,VEF,937
+Old Dong,VNC,704
+Yemeni Dinar,YDD,720
+New Yugoslavian Dinar,YUD,890
+New Dinar,YUM,891
+Yugoslavian Dinar,YUN,890
+New Zaire,ZRN,180
+Zaire,ZRZ,180
+Zambian Kwacha,ZMK,894
+Rhodesian Dollar,ZWC,716
+Zimbabwe Dollar,ZWD,716
+Zimbabwe Dollar (new),ZWN,942
+Zimbabwe Dollar,ZWR,935
+Zimbabwe Dollar,ZWL,932
