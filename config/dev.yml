@@ -172,9 +172,11 @@ services:
       - cdc_network
 
   airflow:
-    image: apache/airflow:2.10.4
+    image: apache/airflow:3.1.7
     container_name: airflow
     restart: unless-stopped
+    env_file:
+      - .env
     depends_on:
       postgres:
         condition: service_healthy
@@ -183,15 +185,15 @@ services:
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://${PSQL_USER}:${PSQL_PASSWORD}@postgres/${PSQL_TRANSACTIONS_DB}
-      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
-      AIRFLOW__WEBSERVER__SECRET_KEY: "${AIFLOW_USER}"
+      # Airflow 3 dynamic user creation via env vars
       _AIRFLOW_WWW_USER_CREATE: "true"
-      _AIRFLOW_WWW_USER_USERNAME: "${AIRFLOW_PASSORD}"
-      _AIRFLOW_WWW_USER_PASSWORD: "${AIRFLOW_SECRET}"
+      _AIRFLOW_WWW_USER_USERNAME: "${AIRFLOW_USER}"
+      _AIRFLOW_WWW_USER_PASSWORD: "${AIRFLOW_PASSWORD}"
     volumes:
-      - ./airflow/dags:/opt/airflow/dags
+      - /Users/sardorb/Documents/pprocessing_cdc/orchestration/dags:/opt/airflow/dags
+      - /Users/sardorb/Documents/pprocessing_cdc/src:/opt/airflow/dags/src
       - airflow_logs:/opt/airflow/logs
-    command: standalone
+    command: bash -c "pip install -r /opt/airflow/dags/src/requirements.txt && airflow standalone"
     networks:
       - cdc_network
 
