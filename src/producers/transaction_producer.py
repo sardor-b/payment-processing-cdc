@@ -12,7 +12,7 @@ async def generate_transactions(
     database: str,
     user: str,
     password: str,
-    n: int = random.randint(500, 1_000)
+    n: int = random.randint(1, 1_000)
 ):
     db = AsyncPostgresConnector(
         host=host,
@@ -118,6 +118,6 @@ if __name__ == '__main__':
         database = DATABASE,
         user = USER,
         password = PASSWORD,
-        n = 60_000
+        n = 100
     ))
 

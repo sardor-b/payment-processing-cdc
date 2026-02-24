@@ -5,7 +5,7 @@ import asyncio
 
 from dotenv import load_dotenv
 from src.connectors import AsyncPostgresConnector
-from src.producers import account_generator
+from src.producers import account_producer
 
 
 async def generate_users(
@@ -44,7 +44,7 @@ async def generate_users(
         params_seq=params
     )]
 
-    await account_generator.generate_accounts(
+    await account_producer.generate_accounts(
         host=host,
         port=port,
         database=database,
@@ -69,5 +69,5 @@ if __name__ == '__main__':
         database = DATABASE,
         user = USER,
         password = PASSWORD,
-        n = 10_000
+        n = 10
     ))

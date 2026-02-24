@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourcePerFileMappings">
-    <file url="file://$PROJECT_DIR$/sql/DDL/DML_main_banks.sql" value="81828eee-4950-4718-b3a0-62155bb09035" />
-    <file url="file://$PROJECT_DIR$/sql/DML/DML_table_main_transactions.sql" value="81828eee-4950-4718-b3a0-62155bb09035" />
+    <file url="file://$PROJECT_DIR$/sql/OLTP_postgres/DML/DML_main_banks.sql" value="81828eee-4950-4718-b3a0-62155bb09035" />
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/81828eee-4950-4718-b3a0-62155bb09035/console.sql" value="81828eee-4950-4718-b3a0-62155bb09035" />
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/81828eee-4950-4718-b3a0-62155bb09035/console_1.sql" value="81828eee-4950-4718-b3a0-62155bb09035" />
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/81828eee-4950-4718-b3a0-62155bb09035/console_2.sql" value="81828eee-4950-4718-b3a0-62155bb09035" />
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/81828eee-4950-4718-b3a0-62155bb09035/console_3.sql" value="81828eee-4950-4718-b3a0-62155bb09035" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/81828eee-4950-4718-b3a0-62155bb09035/console_4.sql" value="81828eee-4950-4718-b3a0-62155bb09035" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/81828eee-4950-4718-b3a0-62155bb09035/console_5.sql" value="81828eee-4950-4718-b3a0-62155bb09035" />
   </component>
 </project>

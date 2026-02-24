@@ -28,7 +28,7 @@ with DAG(
                 database=conn.schema,
                 user=conn.login,
                 password=conn.password,
-                n=60_000
+                n=100
             )
         )
 

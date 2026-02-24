@@ -4,7 +4,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType, StructField, StringType, TimestampType, DecimalType
 
 KAFKA_BOOTSTRAP_SERVERS = 'localhost:9092'
-KAFKA_TOPIC = 'postgres.main.transactions'
+KAFKA_TOPIC = 'postgres.main.users'
 
 CLICKHOUSE_URL = 'jdbc:clickhouse://localhost:8123/warehouse'
 CLICKHOUSE_PROPS = {
@@ -24,7 +24,7 @@ def ch_write(batch_df, batch_id):
         .write
         .format('jdbc')
         .option('url', CLICKHOUSE_URL)
-        .option('dbtable', 'transactions')
+        .option('dbtable', 'users')
         .options(**CLICKHOUSE_PROPS)
         .mode('append')
         .save()
@@ -33,11 +33,10 @@ def ch_write(batch_df, batch_id):
 def main(spark: SparkSession):
     msg_schema = StructType([
         StructField('id', StringType(), False),
-        StructField('originator', StringType(), False),
-        StructField('beneficiary', StringType(), False),
-        StructField('amount', DecimalType(19, 4), False),
+        StructField('user_name', StringType(), False),
+        StructField('user_surname', StringType(), False),
         StructField('status', StringType(), False),
-        StructField('transaction_dt', TimestampType(), False)
+        StructField('registration_dt', TimestampType(), False)
     ])
 
     raw_stream = (
@@ -63,7 +62,7 @@ def main(spark: SparkSession):
         parsed_stream
         .writeStream
         .foreachBatch(ch_write)
-        .option('checkpointLocation', '/tmp/spark_checkpoint/transactions')
+        .option('checkpointLocation', '/tmp/spark_checkpoint/users')
         .trigger(processingTime='10 seconds')
         .start()
     )
@@ -84,7 +83,7 @@ if __name__ == '__main__':
     spark_session = (
         SparkSession
         .builder
-        .appName('TransactionConsumer')
+        .appName('UserConsumer')
         .config(
             "spark.jars.packages",
             "org.apache.spark:spark-sql-kafka-0-10_2.13:4.1.1,"

@@ -1,3 +1,3 @@
-from .user_generator import generate_users
-from .account_generator import generate_accounts
-from .transaction_generator import generate_transactions
+from .user_producer import generate_users
+from .account_producer import generate_accounts
+from .transaction_producer import generate_transactions
