@@ -185,7 +185,6 @@ services:
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://${PSQL_USER}:${PSQL_PASSWORD}@postgres/${PSQL_TRANSACTIONS_DB}
-      # Airflow 3 dynamic user creation via env vars
       _AIRFLOW_WWW_USER_CREATE: "true"
       _AIRFLOW_WWW_USER_USERNAME: "${AIRFLOW_USER}"
       _AIRFLOW_WWW_USER_PASSWORD: "${AIRFLOW_PASSWORD}"
@@ -213,5 +212,71 @@ services:
     depends_on:
       clickhouse:
         condition: service_healthy
+    networks:
+      - cdc_network
+
+  transaction_consumer:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    container_name: transaction_consumer
+    restart: no
+    depends_on:
+      kafka_connect:
+        condition: service_healthy
+      clickhouse:
+        condition: service_healthy
+    environment:
+      CONSUMER_SCRIPT: transaction_consumer.py
+      KAFKA_BOOTSTRAP_SERVERS: kafka:29092
+      TRANSACTIONS_TOPIC: postgres.main.transactions
+      CH_USER: ch_user
+      CH_PASSWORD: ch_password
+      CH_DB: warehouse
+      CH_HOST: clickhouse:8123
+    networks:
+      - cdc_network
+
+  bank_account_consumer:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    container_name: bank_account_consumer
+    restart: no
+    depends_on:
+      kafka_connect:
+        condition: service_healthy
+      clickhouse:
+        condition: service_healthy
+    environment:
+      CONSUMER_SCRIPT: bank_account_consumer.py
+      KAFKA_BOOTSTRAP_SERVERS: kafka:29092
+      BANK_ACCOUNTS_TOPIC: postgres.main.bank_accounts
+      CH_USER: ch_user
+      CH_PASSWORD: ch_password
+      CH_DB: warehouse
+      CH_HOST: clickhouse:8123
+    networks:
+      - cdc_network
+
+  user_consumer:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    container_name: user_consumer
+    restart: no
+    depends_on:
+      kafka_connect:
+        condition: service_healthy
+      clickhouse:
+        condition: service_healthy
+    environment:
+      CONSUMER_SCRIPT: user_consumer.py
+      KAFKA_BOOTSTRAP_SERVERS: kafka:29092
+      USERS_TOPIC: postgres.main.users
+      CH_USER: ch_user
+      CH_PASSWORD: ch_password
+      CH_DB: warehouse
+      CH_HOST: clickhouse:8123
     networks:
       - cdc_network

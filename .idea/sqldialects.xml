@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/sql/OLAP_clickhouse/DDL/DDL_db_main.sql" dialect="ClickHouse" />
+    <file url="file://$PROJECT_DIR$/sql/OLAP_clickhouse/DDL/DDL_db_stg.sql" dialect="ClickHouse" />
+    <file url="file://$PROJECT_DIR$/sql/OLAP_clickhouse/DDL/DDL_table_main_bank_accounts.sql" dialect="ClickHouse" />
+    <file url="file://$PROJECT_DIR$/sql/OLAP_clickhouse/DDL/DDL_table_main_banks.sql" dialect="ClickHouse" />
+    <file url="file://$PROJECT_DIR$/sql/OLAP_clickhouse/DDL/DDL_table_main_currencies.sql" dialect="ClickHouse" />
+    <file url="file://$PROJECT_DIR$/sql/OLAP_clickhouse/DDL/DDL_table_main_transactions.sql" dialect="ClickHouse" />
+    <file url="file://$PROJECT_DIR$/sql/OLAP_clickhouse/DDL/DDL_table_main_users.sql" dialect="ClickHouse" />
+    <file url="file://$PROJECT_DIR$/sql/OLAP_clickhouse/DDL/DDL_table_stg_q_bank_accounts.sql" dialect="ClickHouse" />
+    <file url="file://$PROJECT_DIR$/sql/OLAP_clickhouse/DDL/DDL_table_stg_q_transactions.sql" dialect="ClickHouse" />
+    <file url="file://$PROJECT_DIR$/sql/OLAP_clickhouse/DDL/DDL_table_stg_q_users.sql" dialect="ClickHouse" />
+    <file url="file://$PROJECT_DIR$/sql/OLAP_clickhouse/DDL/DDL_view_stg_mv_bank_accounts.sql" dialect="ClickHouse" />
+    <file url="file://$PROJECT_DIR$/sql/OLAP_clickhouse/DDL/DDL_view_stg_mv_transactions.sql" dialect="ClickHouse" />
+    <file url="file://$PROJECT_DIR$/sql/OLAP_clickhouse/DDL/DDL_view_stg_mv_users.sql" dialect="ClickHouse" />
+    <file url="file://$PROJECT_DIR$/sql/OLTP_postgres/DDL/DDL_table_main_transactions.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/OLTP_postgres/DDL/DDL_type_enums.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/OLTP_postgres/DML/DML_main_banks.sql" dialect="PostgreSQL" />
   </component>
   <component name="SqlResolveMappings">

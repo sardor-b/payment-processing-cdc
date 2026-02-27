@@ -1,16 +1,26 @@
 # pyspark==4.1.1
+import os
 import pyspark.sql.functions as F
+
+from dotenv import load_dotenv
 from pyspark.sql import SparkSession
-from pyspark.sql.types import StructType, StructField, StringType, TimestampType, DecimalType
+from pyspark.sql.types import StructType, StructField, StringType, TimestampType
 
-KAFKA_BOOTSTRAP_SERVERS = 'localhost:9092'
-KAFKA_TOPIC = 'postgres.main.users'
+load_dotenv()
 
-CLICKHOUSE_URL = 'jdbc:clickhouse://localhost:8123/warehouse'
+KAFKA_BOOTSTRAP_SERVERS = os.getenv('KAFKA_BOOTSTRAP_SERVERS')
+KAFKA_TOPIC = os.getenv('USERS_TOPIC')
+
+CH_USER = os.getenv('CH_USER')
+CH_PASSWORD = os.getenv('CH_PASSWORD')
+CH_DB = os.getenv('CH_DB')
+CH_HOST = os.getenv('CH_HOST')
+
+CLICKHOUSE_URL = f'jdbc:clickhouse://{CH_HOST}/{CH_DB}'
 CLICKHOUSE_PROPS = {
     "driver": "com.clickhouse.jdbc.ClickHouseDriver",
-    "user": "ch_user",
-    "password": "ch_password",
+    "user": CH_USER,
+    "password": CH_PASSWORD,
     "isolationLevel": "NONE"
 }
 
@@ -66,15 +76,6 @@ def main(spark: SparkSession):
         .trigger(processingTime='10 seconds')
         .start()
     )
-
-    # query = (
-    #     parsed_stream
-    #     .writeStream
-    #     .format('console')
-    #     .option('truncate', 'false')
-    #     .outputMode('append')
-    #     .start()
-    # )
 
     query.awaitTermination()
 

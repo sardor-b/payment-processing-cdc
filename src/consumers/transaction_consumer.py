@@ -1,16 +1,26 @@
-# pyspark==4.1.1
+# pyspark==3.5.4
+import os
 import pyspark.sql.functions as F
+
+from dotenv import load_dotenv
 from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType, StructField, StringType, TimestampType, DecimalType
 
-KAFKA_BOOTSTRAP_SERVERS = 'localhost:9092'
-KAFKA_TOPIC = 'postgres.main.transactions'
+load_dotenv()
 
-CLICKHOUSE_URL = 'jdbc:clickhouse://localhost:8123/warehouse'
+KAFKA_BOOTSTRAP_SERVERS = os.getenv('KAFKA_BOOTSTRAP_SERVERS')
+KAFKA_TOPIC = os.getenv('TRANSACTIONS_TOPIC')
+
+CH_USER = os.getenv('CH_USER')
+CH_PASSWORD = os.getenv('CH_PASSWORD')
+CH_DB = os.getenv('CH_DB')
+CH_HOST = os.getenv('CH_HOST')
+
+CLICKHOUSE_URL = f'jdbc:clickhouse://{CH_HOST}/{CH_DB}'
 CLICKHOUSE_PROPS = {
     "driver": "com.clickhouse.jdbc.ClickHouseDriver",
-    "user": "ch_user",
-    "password": "ch_password",
+    "user": CH_USER,
+    "password": CH_PASSWORD,
     "isolationLevel": "NONE"
 }
 
@@ -68,15 +78,6 @@ def main(spark: SparkSession):
         .start()
     )
 
-    # query = (
-    #     parsed_stream
-    #     .writeStream
-    #     .format('console')
-    #     .option('truncate', 'false')
-    #     .outputMode('append')
-    #     .start()
-    # )
-
     query.awaitTermination()
 
 
@@ -87,10 +88,12 @@ if __name__ == '__main__':
         .appName('TransactionConsumer')
         .config(
             "spark.jars.packages",
-            "org.apache.spark:spark-sql-kafka-0-10_2.13:4.1.1,"
-            "com.clickhouse:clickhouse-jdbc:0.9.6"
+            "org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.4,"
+            "com.clickhouse:clickhouse-jdbc:0.8.1"
         )
+        .config("spark.sql.shuffle.partitions", "4")
+        .config("spark.default.parallelism", "4")
         .getOrCreate()
     )
-    spark_session.sparkContext.setLogLevel("INFO")
+    spark_session.sparkContext.setLogLevel("ERROR")
     main(spark_session)

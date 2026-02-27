@@ -3,7 +3,7 @@ create table if not exists warehouse.transactions (
     originator FixedString(36),
     beneficiary FixedString(36),
     amount decimal(19, 4),
-    status Enum('SUCCESSFUL', 'FAILED'),
+    status String,
     transaction_dt DateTime64(6, 'UTC')
 )
 engine = ReplacingMergeTree -- needed for deduplication

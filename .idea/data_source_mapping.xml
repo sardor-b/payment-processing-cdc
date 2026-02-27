@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourcePerFileMappings">
+    <file url="file://$PROJECT_DIR$/sql/OLAP_clickhouse/DDL/DDL_db_main.sql" value="aff8dc91-ebf9-4b3f-90c2-abf125ae1336" />
+    <file url="file://$PROJECT_DIR$/sql/OLAP_clickhouse/DDL/DDL_db_stg.sql" value="aff8dc91-ebf9-4b3f-90c2-abf125ae1336" />
+    <file url="file://$PROJECT_DIR$/sql/OLAP_clickhouse/DDL/DDL_table_main_bank_accounts.sql" value="aff8dc91-ebf9-4b3f-90c2-abf125ae1336" />
+    <file url="file://$PROJECT_DIR$/sql/OLAP_clickhouse/DDL/DDL_table_main_banks.sql" value="aff8dc91-ebf9-4b3f-90c2-abf125ae1336" />
+    <file url="file://$PROJECT_DIR$/sql/OLAP_clickhouse/DDL/DDL_table_main_currencies.sql" value="aff8dc91-ebf9-4b3f-90c2-abf125ae1336" />
+    <file url="file://$PROJECT_DIR$/sql/OLAP_clickhouse/DDL/DDL_table_main_transactions.sql" value="aff8dc91-ebf9-4b3f-90c2-abf125ae1336" />
+    <file url="file://$PROJECT_DIR$/sql/OLAP_clickhouse/DDL/DDL_table_main_users.sql" value="aff8dc91-ebf9-4b3f-90c2-abf125ae1336" />
+    <file url="file://$PROJECT_DIR$/sql/OLAP_clickhouse/DDL/DDL_table_stg_q_bank_accounts.sql" value="aff8dc91-ebf9-4b3f-90c2-abf125ae1336" />
+    <file url="file://$PROJECT_DIR$/sql/OLAP_clickhouse/DDL/DDL_table_stg_q_transactions.sql" value="aff8dc91-ebf9-4b3f-90c2-abf125ae1336" />
+    <file url="file://$PROJECT_DIR$/sql/OLAP_clickhouse/DDL/DDL_table_stg_q_users.sql" value="aff8dc91-ebf9-4b3f-90c2-abf125ae1336" />
+    <file url="file://$PROJECT_DIR$/sql/OLAP_clickhouse/DDL/DDL_view_stg_mv_bank_accounts.sql" value="aff8dc91-ebf9-4b3f-90c2-abf125ae1336" />
+    <file url="file://$PROJECT_DIR$/sql/OLAP_clickhouse/DDL/DDL_view_stg_mv_transactions.sql" value="aff8dc91-ebf9-4b3f-90c2-abf125ae1336" />
+    <file url="file://$PROJECT_DIR$/sql/OLAP_clickhouse/DDL/DDL_view_stg_mv_users.sql" value="aff8dc91-ebf9-4b3f-90c2-abf125ae1336" />
+    <file url="file://$PROJECT_DIR$/sql/OLTP_postgres/DDL/DDL_table_main_transactions.sql" value="81828eee-4950-4718-b3a0-62155bb09035" />
+    <file url="file://$PROJECT_DIR$/sql/OLTP_postgres/DDL/DDL_type_enums.sql" value="81828eee-4950-4718-b3a0-62155bb09035" />
     <file url="file://$PROJECT_DIR$/sql/OLTP_postgres/DML/DML_main_banks.sql" value="81828eee-4950-4718-b3a0-62155bb09035" />
-    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/81828eee-4950-4718-b3a0-62155bb09035/console.sql" value="81828eee-4950-4718-b3a0-62155bb09035" />
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/81828eee-4950-4718-b3a0-62155bb09035/console_1.sql" value="81828eee-4950-4718-b3a0-62155bb09035" />
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/81828eee-4950-4718-b3a0-62155bb09035/console_2.sql" value="81828eee-4950-4718-b3a0-62155bb09035" />
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/81828eee-4950-4718-b3a0-62155bb09035/console_3.sql" value="81828eee-4950-4718-b3a0-62155bb09035" />
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/81828eee-4950-4718-b3a0-62155bb09035/console_4.sql" value="81828eee-4950-4718-b3a0-62155bb09035" />
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/81828eee-4950-4718-b3a0-62155bb09035/console_5.sql" value="81828eee-4950-4718-b3a0-62155bb09035" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/81828eee-4950-4718-b3a0-62155bb09035/console_6.sql" value="81828eee-4950-4718-b3a0-62155bb09035" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/aff8dc91-ebf9-4b3f-90c2-abf125ae1336/console.sql" value="aff8dc91-ebf9-4b3f-90c2-abf125ae1336" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/aff8dc91-ebf9-4b3f-90c2-abf125ae1336/console_1.sql" value="aff8dc91-ebf9-4b3f-90c2-abf125ae1336" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/aff8dc91-ebf9-4b3f-90c2-abf125ae1336/console_2.sql" value="aff8dc91-ebf9-4b3f-90c2-abf125ae1336" />
   </component>
 </project>

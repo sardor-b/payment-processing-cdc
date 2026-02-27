@@ -90,3 +90,9 @@ DB TABLE ENUMs:
   - status:
     - SUCCESSFUL
     - FAILED
+
+--------------------------------------
+- CDC Streaming options:
+  - Clickhouse tables (stg.q_*, stg.mv_*)
+  - KStreams
+  - Spark jobs (the most inefficient)

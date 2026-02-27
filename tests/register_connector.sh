@@ -1,7 +1,7 @@
 curl -X POST http://localhost:8083/connectors \
   -H "Content-Type: application/json" \
   -d '{
-    "name": "postgres-cdc-connector",
+    "name": "postgres-cdc-connector-1",
     "config": {
       "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
       "database.hostname": "postgres",
@@ -15,6 +15,6 @@ curl -X POST http://localhost:8083/connectors \
       "slot.name": "debezium_slot",
       "publication.name": "debezium_publication",
       "decimal.handling.mode": "double",
-      "snapshot.mode": "no_data"
+      "snapshot.mode": "initial"
     }
   }'

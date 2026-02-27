@@ -5,7 +5,7 @@ create table if not exists warehouse.bank_accounts (
     currency_code FixedString(3),
     account FixedString(20),
     balance decimal(19, 4),
-    status Enum('ACTIVE', 'BLOCKED', 'TERMINATED'),
+    status String,
     update_dt DATETIME64(6, 'UTC'),
     registration_dt DATETIME64(6, 'UTC')
 )

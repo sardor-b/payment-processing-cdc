@@ -3,7 +3,7 @@ create table if not exists warehouse.users
     id FixedString(36),
     user_name String,
     user_surname String,
-    status Enum('ACTIVE', 'BLOCKED', 'TERMINATED'),
+    status String,
     registration_dt DateTime64(6, 'UTC')
 )
 engine = ReplacingMergeTree
