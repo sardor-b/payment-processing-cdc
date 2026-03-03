@@ -118,6 +118,6 @@ if __name__ == '__main__':
         database = DATABASE,
         user = USER,
         password = PASSWORD,
-        n = 10_000
+        n = 10
     ))
 

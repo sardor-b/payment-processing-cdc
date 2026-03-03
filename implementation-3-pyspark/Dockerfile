@@ -9,10 +9,10 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /app
 
-COPY requirements.txt .
+COPY ../requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY src/consumers/*.py ./consumers/
+COPY implementation-3-pyspark/pyspark_consumers/*.py ./consumers/
 
 COPY entrypoint.sh /app/entrypoint.sh
 RUN chmod +x /app/entrypoint.sh
