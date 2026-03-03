@@ -1,5 +1,5 @@
 ## Payment Processing Change Data Capture Implementation
-***
+
 ### Introduction:
 Imagine a payment processing company, that heavily depends on a transactional database (OLTP), 
 say like, PostgreSQL. They process **100,000+ transactions every day** and have 1M+ private clients.
