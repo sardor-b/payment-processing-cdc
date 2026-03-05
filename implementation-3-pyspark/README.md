@@ -1,2 +1,2 @@
 Illustration for transactions table:
-![PySparkCDC.jpg](pics/PySparkCDC.jpg)
+![PySparkCDC.jpg](pics/PySparkCDC.jpg)  
