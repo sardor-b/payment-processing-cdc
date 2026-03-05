@@ -57,6 +57,7 @@ def main(spark: SparkSession):
         .option('subscribe', KAFKA_TOPIC)
         .option('startingOffsets', 'latest')
         .option('failOnDataLoss', 'true')
+        .option('maxOffsetsPerTrigger', 10_000)
         .load()
     )
 
