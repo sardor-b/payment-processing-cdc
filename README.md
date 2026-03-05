@@ -10,12 +10,13 @@ analytics, implement machine learning algorithms to learn about their customers 
 behavioral patterns.
 
 ### Solution:
-We create Data WareHouse (DWH) that gets data through Extract-Transform-Load (ETL) pipeline from 
+>We create Data WareHouse (DWH) that gets data through Extract-Transform-Load (ETL) pipeline from 
 Change Data Capture (CDC) Engine that logs every update in kafka topics. 
 
-**How will Extract-Transform-Load (ETL) pipeline work:** We set up kafka consumer for every table, then transform and UPSERT (INSERT+UPDATE) every change that we receive as a message in kafka topics. 
+**How will Extract-Transform-Load (ETL) pipeline work:** We set up kafka consumer for every table, 
+then transform and UPSERT (INSERT+UPDATE) every change that we receive as a message in kafka topics. 
 
-**How does CDC work:** when we update something in a database, it logs that action 
+**How does CDC work:** When we update something in a database, it logs that action 
 (INSERT, UPDATE, DELETE) in transactions and Debezium Engine catches that change (or delta) and
 sends it to a certain kafka topic as a message.
 
@@ -27,4 +28,4 @@ sends it to a certain kafka topic as a message.
 ***
 
 *PostgreSQL Schema:*
-![postgres_schema.png](postgres_schema.png)
+![postgres_schema.png](pics/postgres_schema.png)

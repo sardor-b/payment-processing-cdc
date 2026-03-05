@@ -1,0 +1,1 @@
+![kstreams_schema](pics/kstreams_schema.jpg)
