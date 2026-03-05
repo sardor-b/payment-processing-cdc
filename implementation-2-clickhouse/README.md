@@ -1,0 +1,1 @@
+![ClickhouseKafkaEngineCDC.jpg](pics/ClickhouseKafkaEngineCDC.jpg)
